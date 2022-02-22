@@ -16,3 +16,14 @@ connect.addEventListener('click', function () {
     connectPhone.style.display = 'block';
     connectBtn.style.display = 'block';
 })
+
+let tarrifBtn = document.querySelector('.tarrifs__btns-item');
+let tarrifBtnSecond = document.querySelector('.tarrifs__btns-item-second');
+tarrifBtnSecond.addEventListener('click', function () {
+    tarrifBtnSecond.classList.add('tarrifs-btn-active');
+    tarrifBtn.classList.remove('tarrifs-btn-active');
+});
+tarrifBtn.addEventListener('click', function () {
+    tarrifBtn.classList.add('tarrifs-btn-active');
+    tarrifBtnSecond.classList.remove('tarrifs-btn-active');
+});
