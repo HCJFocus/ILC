@@ -1,0 +1,89 @@
+.footer{
+    background-color: #E8EDF3;
+    &__container{
+        @include flex(space-between,center);
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 80px;
+        padding-right: 110px;
+        @media (max-width: 425px) {
+            flex-direction: column-reverse;
+            padding-top: 32px;
+            padding-bottom: 20px;
+            padding-left: 75px;
+            padding-right: 75px;
+         }
+         @media (max-width: 375px) {
+            flex-direction: column-reverse;
+            padding-top: 32px;
+            padding-bottom: 20px;
+            padding-left: 75px;
+            padding-right: 75px;
+         }
+        @media (max-width: 320px) {
+            flex-direction: column-reverse;
+            padding-top: 32px;
+            padding-bottom: 20px;
+            padding-left: 75px;
+            padding-right: 75px;
+         }
+    }
+    &__item{
+        @media (max-width: 425px) {
+            margin-bottom: 32px;
+            text-align: center;
+            &:first-child{
+                margin: 0;
+                text-align: center;
+            }
+         }
+         @media (max-width: 375px) {
+            margin-bottom: 32px;
+            &:first-child{
+                margin: 0;
+                text-align: center;
+            }
+         }
+        @media (max-width: 320px) {
+            margin-bottom: 32px;
+            &:first-child{
+                margin: 0;
+                text-align: center;
+            }
+         }
+        p{
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 20px;
+            color: $footer-gray-color;
+            @media (max-width: 425px) {
+                font-size: 10px;
+             }
+             @media (max-width: 375px) {
+                font-size: 10px;
+             }
+            @media (max-width: 320px) {
+                font-size: 10px;
+             }
+        }
+        a{
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 20px;
+            color: $footer-gray-color;
+            margin-right: 16px;
+            &:last-child{
+                margin: 0;
+            }
+            @media (max-width: 425px) {
+                margin-right: 0;
+             }
+             @media (max-width: 375px) {
+                margin-right: 0;
+             }
+            @media (max-width: 320px) {
+                margin-right: 0;
+             }
+        }
+    }
+}

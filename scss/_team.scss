@@ -1,0 +1,320 @@
+.team-top-item{
+    @include flex(space-between,center);
+    @media (max-width: 425px) {
+        flex-direction: column;
+    }
+    &__text{
+        max-width: 405px;
+        @media (max-width: 425px) {
+            text-align: center;
+        }
+        @media (max-width: 320px) {
+            text-align: center;
+        }
+        .team-logo{
+            svg{
+                margin-bottom: 32px;
+                @media (max-width: 425px) {
+                    margin-bottom: 24px;
+                }
+                @media (max-width: 320px) {
+                    width: 54px;
+                    margin-bottom: 14px;
+                }
+            }
+        }
+        h2{
+            margin: 0;
+            margin-bottom: 16px;
+            @media (max-width: 425px) {
+                text-align: center;
+            }
+            @media (max-width: 320px) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+        p{
+            margin: 0;
+            @media (max-width: 425px) {
+                text-align: center;
+                margin-bottom: 24px;
+            }
+            @media (max-width: 375px) {
+                font-size: 13px;
+            }
+        }
+    }
+    &__profit{
+        @include flex(space-between,center);
+        align-items: baseline;
+        gap: 15px;
+        position: relative;
+        right: 100px;
+        @media (max-width: 425px) {
+            right: 10px;
+        }
+        @media (max-width: 320px) {
+            right: 12px;
+            align-items: flex-end;
+        }
+        &-bg{
+            .team-bg{
+                position: absolute;
+            }
+        }
+        .bg-item-one{
+            top: -55px;
+            right: -110px;
+            z-index: -1;
+            @media (max-width: 425px) {
+                width: 100px;
+                left: 300px;
+                top: -65px;
+            }
+            @media (max-width: 375px) {
+                width: 90px;
+                left: 280px;
+                top: -65px;
+            }
+            @media (max-width: 320px) {
+                width: 80px;
+                left: 231px;
+                top: -55px;
+            }
+        }
+        .bg-item-two{
+            top: 205px;
+            right: 180px;
+            z-index: -1;
+            @media (max-width: 425px) {
+                display: none;
+            }
+        }
+        .bg-item-three{
+            top: 167px;
+            left: 10px;
+            z-index: -1;
+            @media (max-width: 425px) {
+                top: 130px;
+                left: 0;
+            }
+            @media (max-width: 320px) {
+                width: 25px;
+                height: 25px;
+                top: 120px;
+                left: 15px;
+            }
+        }
+    }
+}
+.team-profit-left{
+    @include flex(space-between,center);
+    @media (max-width: 320px) {
+        align-items: flex-end;
+    }
+    flex-direction: column;
+    gap: 17px;
+    &__descr{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: $gray-light-color;
+        @media (max-width: 320px) {
+            font-size: 10px;
+        }
+    }
+    .left-subtitle-one{
+        max-width: 105px;
+        @media (max-width: 320px) {
+            max-width: 80px;
+        }
+    }
+    .left-subtitle-two{
+        max-width: 128px;
+    }
+    &__container:nth-child(1){
+        padding: 32px;
+        @media (max-width: 425px) {
+            padding: 16px;
+        }
+    }
+    &__container:nth-child(2){
+        padding: 24px;
+        @media (max-width: 425px) {
+            padding: 16px;
+        }
+    }
+    &__title{
+        margin: 0;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        background: linear-gradient(180deg, #4614E8, #BCA7FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media (max-width: 375px) {
+            font-size: 32px;
+        }
+        span{
+            font-size: 16px;
+        }
+    }
+    .big-title{
+        font-size: 48px;
+        @media (max-width: 375px) {
+            font-size: 32px;
+        }
+    }
+    &__item{
+        background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+        border-radius: 10px;
+        &:first-child{
+        max-width: 217px;
+        @media (max-width: 375px) {
+            max-width: 150px;
+        }
+        }
+        &:last-child{
+            max-width: 179px;
+            @media (max-width: 320px) {
+                max-width: 124px;
+            }
+        }
+    }
+}
+.team-profit-right{
+    @include flex(space-between,center);
+    flex-direction: column;
+    gap: 17px;
+    &__descr{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: $gray-light-color;
+        @media (max-width: 320px) {
+            font-size: 10px;
+        }
+    }
+    &__title{
+        margin: 0;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        background: linear-gradient(180deg, #4614E8, #BCA7FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        span{
+            font-size: 16px;
+        }
+    }
+    .small-title{
+        font-family: 'Artegra';
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.17em;
+    }
+    @media (max-width: 425px) {
+        .middle-title{
+            font-size: 32px;
+        }
+    }
+    &__container:nth-child(2){
+        padding: 24px;
+        @media (max-width: 425px) {
+            padding: 16px;
+        }
+    }
+    &__container:nth-child(1){
+        padding: 32px;
+        @media (max-width: 425px) {
+            padding-top: 7px;
+            padding-left: 8px;
+        }
+    }
+    &__item{
+        background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+        border-radius: 10px;
+        &:first-child{
+        max-width: 179px;
+        @media (max-width: 320px) {
+            max-width: 124px;
+            height: 91px;
+        }
+        }
+        &:last-child{
+            max-width: 192px;
+            @media (max-width: 320px) {
+                max-width: 132px;
+                height: 110px;
+            }
+        }
+    }
+  }
+  .team-bot-item{
+      padding-top: 85px;
+      @media (max-width: 425px) {
+        padding-top: 35px;
+    }
+      &__title{
+          margin: 0;
+          text-align: center;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          color: $gray-color;
+          margin-bottom: 32px;
+      }
+      &__box{
+        @include flex(space-between,center);
+        @media (max-width: 425px) {
+            flex-direction: column;
+        }
+        @media (max-width: 320px) {
+            gap: 8px;
+        }
+        .team-support-item{
+            background-color: $white-color;
+            border-radius: 10px;
+            width: 344px;
+            @media (max-width: 320px) {
+                width: 100%;
+            }
+            &__title{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                color: $gray-color;
+                margin: 0;
+                margin-bottom: 16px;
+                text-align: left;
+                padding-top: 16px;
+                @media (max-width: 425px) {
+                    text-align: center;
+                }
+            }
+            &__subtitle{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 150%;
+                color: $gray-light-color;
+                text-align: left;
+                @media (max-width: 425px) {
+                    text-align: center;
+                }
+                @media (max-width: 320px) {
+                    font-size: 12px;
+                }
+            }
+            &__container{
+                padding: 32px;
+                text-align: center;
+                @media (max-width: 425px) {
+                    padding: 24px;
+                }
+            }
+        }
+      }
+  }

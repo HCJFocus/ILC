@@ -59,7 +59,7 @@
         &-item{
             background-color: $white-color;
             border-radius: 20px;
-            box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+            box-shadow: 0px 4px 100px rgba(244, 247, 250, 1);
             &-btn{
                 background: $blue-color;
                 border-radius: 15px;
@@ -146,11 +146,16 @@
                 }
             }
             .step-bg-one{
-                margin-bottom: 32px;
-                width: 160px;
-                @include flex(center,center);
-                margin: auto;
-                margin-bottom: 16px;
+                margin-bottom: 14px;
+            }
+            @media (max-width: 320px) {
+                .step-bg-one{
+                    margin-bottom: 32px;
+                    width: 160px;
+                    @include flex(center,center);
+                    margin: auto;
+                    margin-bottom: 16px;
+                }
             }
             &-top,
             &-bot{
@@ -164,7 +169,7 @@
                 font-size: 16px;
                 color: $gray-light-color;
                 margin: 0;
-                margin-top: 16px;
+                margin-top: 24px;
                 margin-bottom: 16px;
                 @media (max-width: 425px) {
                     font-size: 14px;
