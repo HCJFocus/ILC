@@ -1,5 +1,8 @@
 .supervisor{
     padding-top: 144px;
+    @media (max-width: 768px) {
+        padding-top: 100px;
+    }
     @media (max-width: 425px) {
         padding-top: 72px;
     }
@@ -12,8 +15,14 @@
     &__box{
         @include flex(space-around,flex-start);
         gap: 100px;
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 32px;
+        }
         @media (max-width: 425px) {
             flex-direction: column-reverse;
+            align-items: flex-start;
             gap: 32px;
         }
         @media (max-width: 375px) {
@@ -22,6 +31,7 @@
         }
         @media (max-width: 320px) {
             flex-direction: column-reverse;
+            align-items: flex-start;
             gap: 32px;
         }
         &-portrait{
@@ -119,6 +129,10 @@
         }
         &-text{
             padding-top: 70px;
+            @media (max-width: 768px) {
+                text-align: center;
+                padding-top: 0;
+            }
             @media (max-width: 425px) {
                 padding-top: 0;
             }
@@ -202,6 +216,9 @@
             &-list{
                 margin: 0;
                 margin-bottom: 16px;
+                @media (max-width: 768px) {
+                    text-align: left;
+                }
                 @media (max-width: 425px) {
                     padding-left: 26px;
                     margin-bottom: 8px;

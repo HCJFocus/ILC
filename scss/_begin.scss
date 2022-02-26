@@ -1,5 +1,8 @@
 .begin{
     padding-top: 144px;
+    @media (max-width: 768px) {
+        padding-top: 100px;
+    }
     @media (max-width: 425px) {
         padding-top: 1630px;
     }
@@ -31,6 +34,16 @@
         z-index: -1;
         top: 190px;
         left: 15px;
+        @media (max-width: 1024px) {
+            top: 190px;
+            left: 70px;
+            svg{
+                width: 900px;
+            }
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
         @media (max-width: 425px) {
             display: none;
         }
@@ -44,6 +57,10 @@
     &__steps{
         @include flex(center,flex-start);
         gap: 16px;
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            align-items: center;
+        }
         @media (max-width: 425px) {
             flex-direction: column;
             align-items: center;
@@ -60,6 +77,15 @@
             background-color: $white-color;
             border-radius: 20px;
             box-shadow: 0px 4px 100px rgba(244, 247, 250, 1);
+            @media (max-width: 425px) {
+                width: 100%;
+            }
+            @media (max-width: 375px) {
+                width: 100%;
+            }
+            @media (max-width: 320px) {
+                width: 100%;
+            }
             &-btn{
                 background: $blue-color;
                 border-radius: 15px;
@@ -163,6 +189,30 @@
                 border-radius: 20px;
                 box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
                 padding: 32px;
+                @media (max-width: 425px) {
+                    width: 100%;
+                    padding: 0;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                    .begin__steps-item-title{
+                        padding-left: 24px;
+                    }
+                    .begin__steps-item-descr{
+                        padding-left: 24px;
+                    }
+                }
+                @media (max-width: 375px) {
+                    width: 100%;
+                    padding: 0;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                }
+                @media (max-width: 320px) {
+                    width: 100%;
+                    padding: 0;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                }
             }
             &-title{
                 font-weight: 700;
@@ -171,18 +221,6 @@
                 margin: 0;
                 margin-top: 24px;
                 margin-bottom: 16px;
-                @media (max-width: 425px) {
-                    font-size: 14px;
-                    margin-top: 22px;
-                }
-                @media (max-width: 375px) {
-                    font-size: 14px;
-                    margin-top: 22px;
-                }
-                @media (max-width: 320px) {
-                    font-size: 14px;
-                    margin-top: 22px;
-                }
             }
             &-descr{
                 font-weight: 300;
@@ -213,11 +251,35 @@
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
+            .step-one{
+                padding-right: 16px;
+                padding-left: 16px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                @media (max-width: 425px) {
+                    margin-left: 24px;
+                }
+                @media (max-width: 375px) {
+                    margin-left: 24px;
+                }
+                @media (max-width: 320px) {
+                    margin-left: 24px;
+                }
+            }
             .step-two{
                 padding-top: 10px;
                 padding-bottom: 10px;
                 padding-right: 14px;
                 padding-left: 14px;
+                @media (max-width: 425px) {
+                    margin-left: 24px;
+                }
+                @media (max-width: 375px) {
+                    margin-left: 24px;
+                }
+                @media (max-width: 320px) {
+                    margin-left: 24px;
+                }
             }
             .step-three{
                 padding-top: 10px;

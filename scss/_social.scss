@@ -6,6 +6,9 @@
         padding-top: 32px;
         padding-bottom: 32px;
         padding-left: 80px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
         @media (max-width: 425px) {
             flex-direction: column;
             padding-top: 32px;
@@ -30,6 +33,11 @@
     }
     &__item{
         @include flex(center,center);
+        @media (max-width: 768px) {
+            &:first-child{
+            margin-bottom: 30px;
+            }
+        }
         @media (max-width: 425px) {
             &:first-child{
             flex-direction: column;

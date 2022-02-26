@@ -30,6 +30,12 @@ body{
 .header__container{
     max-width: 1275px;
     margin: 0 auto;
+    @media (max-width: 1024px) {
+        width: 950px;
+    }
+    @media (max-width: 768px) {
+        width: 670px;
+    }
     @media (max-width: 425px) {
         width: 350px;
     }
@@ -43,6 +49,12 @@ body{
 .intro__container{
     max-width: 1275px;
     margin: 0 auto;
+    @media (max-width: 1024px) {
+        width: 950px;
+    }
+    @media (max-width: 768px) {
+        width: 670px;
+    }
     @media (max-width: 425px) {
         width: 350px;
     }
@@ -83,6 +95,12 @@ a{
 .container{
     max-width: 1062px;
     margin: 0 auto;
+    @media (max-width: 1024px) {
+        width: 950px;
+    }
+    @media (max-width: 768px) {
+        width: 670px;
+    }
     @media (max-width: 425px) {
         width: 350px;
     }
